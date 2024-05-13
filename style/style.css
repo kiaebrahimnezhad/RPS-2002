@@ -1,6 +1,56 @@
 :root {
+  /* --blueGradiant: #3B2A9F;
+  --secondary: #FA8305; */
+  --black-700: #000;
+    --secondary: #fa8305;
+    --blueGradiant: #3B2A9F;
+    --box_bg: #1C140F;
+    --primary-100: #5141AA;
 }
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+body{
+  font-family: Poppins;
+}
+
+.bg-purple{
+  background-color: var(--blueGradiant);
+}
+
+.bg-orange{
+  background-color: var(--secondary);
+}
+
+.shapes{
+  height: 45vh;
+}
+
+input[type='radio']:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: var(--secondary);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 5px solid #fa8305;
+}
+
+input[type='radio']:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: white;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 5px solid #fa8305 ;
 }
