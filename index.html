@@ -15,22 +15,26 @@
   </head>
   <body class="bg-purple">
     <main class="container-fluid text-light">
-      <section class="text-center mt-5">
+      <section class="text-center mt-4">
         <h1 id="result">Rock Paper Scissors</h1>
       </section>
 
-      <section class="text-center mt-5">
-        <h1 id="liveScore">Your Turn !</h1>
+      <section class="text-center mt-4">
+        <h1 id="liveScore">You 0 : 0 Ai</h1>
       </section>
 
-      <section class="row m-5 text-center">
+      <section class="text-center mt-4">
+        <h1 id="computerChose">Your Turn !</h1>
+      </section>
+
+      <section class="row m-4 text-center">
         <div class="col ">
           <div class="shapes">
             <img class="w-100 h-100" src="assets/images/paper.png" alt="">
           </div>
           
           <div class="mt-4">
-            <input class="bg-orange" type="radio" name="rps" id="paper" value="1">
+            <input class="myradio" type="radio" name="rps" id="paper" value="1" checked>
           </div>
         </div>
 
@@ -39,8 +43,8 @@
             <img class="w-100 h-100" src="assets/images/two.png" alt="">
           </div>
 
-          <div class="mt-4">
-            <input type="radio" name="rps" id="two" value="2">
+          <div class="mt-4 radioDiv">
+            <input class="myradio" type="radio" name="rps" id="two" value="2">
           </div>
         </div>
 
@@ -49,14 +53,14 @@
             <img class="w-100 h-100" src="assets/images/rock.png" alt="">
           </div>
 
-          <div class="mt-4">
-            <input type="radio" name="rps" id="rock" value="3">
+          <div class="mt-4 radioDiv">
+            <input class="myradio" type="radio" name="rps" id="rock" value="3">
           </div>
         </div>
       </section>
 
       <section class="text-center">
-        <button class="bg-purple btn text-light border-light px-5 py-2 fw-bold" type="submit" onclick="test()">start</button>
+        <button class="bg-purple btn text-light border-light px-5 py-2 fw-bold" type="submit" onclick="score(this)">start</button>
       </section>
 
     </main>
